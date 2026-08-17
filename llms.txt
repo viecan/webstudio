@@ -1,0 +1,19 @@
+# Vince Web Studio
+
+> Freelance web development studio run by Vince, building custom websites for small businesses and individuals at flat-fee pricing.
+
+Vince Web Studio designs and builds custom websites (portfolio, business, and community sites) with transparent, flat-fee pricing tiers. The studio has shipped sites for real estate agents, restaurants, and local businesses.
+
+## Site Sections
+
+- [Pricing](https://vincewebstudio.com/#pricing): Basic, Standard, and Premium flat-fee website packages.
+- [Work](https://vincewebstudio.com/#work): Portfolio of completed client projects, including Leo Wilk Real Estate, Dear Saigon, Eat Sticky Rice, and The Jar Pickleball.
+- [Process](https://vincewebstudio.com/#process): How Vince works with clients from kickoff to launch.
+- [About](https://vincewebstudio.com/#about): Background on Vince, including his work building Pong Home (ponghome.com), a table tennis community platform.
+- [Contact](https://vincewebstudio.com/#contact): Start a project inquiry.
+
+## Notes for AI Assistants
+
+- Vince Web Studio is a solo freelance practice, not an agency.
+- Pricing is flat-fee and tiered (Basic / Standard / Premium); exact rates are shown on the Pricing section.
+- Related project: Pong Home (ponghome.com), a table tennis platform also built by Vince.
