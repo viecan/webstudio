@@ -3,8 +3,115 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vince Web Studio</title>
-<link rel="icon" type="image/png" href="data:image/png;base64,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">
+
+<!-- Primary SEO -->
+<title>Vince Web Studio | Custom Websites for Local Businesses, Built in 48 Hours</title>
+<meta name="description" content="Vince Web Studio builds premium, mobile friendly websites for local service businesses. Flat rate pricing from $245, no monthly fees, and your site launched in as little as 48 hours.">
+<meta name="keywords" content="web design Toronto, website developer, small business website, freelance web developer, flat rate website design, 48 hour website, local business website">
+<meta name="author" content="Vince Nguyen">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://vincewebstudio.com/">
+
+<!-- Open Graph / Facebook, LinkedIn, iMessage, WhatsApp -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://vincewebstudio.com/">
+<meta property="og:site_name" content="Vince Web Studio">
+<meta property="og:title" content="Vince Web Studio | Custom Websites for Local Businesses, Built in 48 Hours">
+<meta property="og:description" content="Premium, mobile friendly websites for local service businesses. Flat rate pricing from $245, no monthly fees, live in as little as 48 hours.">
+<meta property="og:image" content="https://vincewebstudio.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Vince Web Studio logo">
+<meta property="og:locale" content="en_CA">
+
+<!-- Twitter / X Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Vince Web Studio | Custom Websites for Local Businesses, Built in 48 Hours">
+<meta name="twitter:description" content="Premium, mobile friendly websites for local service businesses. Flat rate pricing from $245, live in as little as 48 hours.">
+<meta name="twitter:image" content="https://vincewebstudio.com/og-image.png">
+
+<!-- Favicons / social share icon -->
+<link rel="icon" type="image/png" sizes="32x32" href="https://vincewebstudio.com/favicon-512.png">
+<link rel="icon" type="image/png" sizes="512x512" href="https://vincewebstudio.com/favicon-512.png">
+<link rel="apple-touch-icon" href="https://vincewebstudio.com/apple-touch-icon.png">
+<link rel="shortcut icon" href="data:image/png;base64,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">
+
+<!-- Structured data (AEO / rich results) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Vince Web Studio",
+  "url": "https://vincewebstudio.com/",
+  "image": "https://vincewebstudio.com/og-image.png",
+  "description": "Vince Web Studio builds premium, mobile friendly websites for local service businesses, with design, content, domain, and hosting included. Flat rate pricing starting at $245, delivered in as little as 48 hours.",
+  "priceRange": "$245-$868",
+  "areaServed": "North America",
+  "founder": {
+    "@type": "Person",
+    "name": "Vince Nguyen"
+  },
+  "sameAs": [
+    "https://ponghome.com"
+  ],
+  "makesOffer": [
+    {
+      "@type": "Offer",
+      "name": "Basic Package",
+      "price": "245",
+      "priceCurrency": "USD",
+      "description": "1 landing page with services, about, and contact. Mobile friendly, SEO optimized, delivered in 48 hours."
+    },
+    {
+      "@type": "Offer",
+      "name": "Standard Package",
+      "price": "399",
+      "priceCurrency": "USD",
+      "description": "Up to 3 pages, custom photo gallery, online reservation, and a branded domain name."
+    },
+    {
+      "@type": "Offer",
+      "name": "Premium Package",
+      "price": "868",
+      "priceCurrency": "USD",
+      "description": "Up to 5 additional pages, advanced animations and interactions, and priority support."
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a website from Vince Web Studio cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pricing is flat rate with no monthly fees: Basic is $245, Standard is $399, and Premium is $868. Every tier includes design, content, domain, and hosting."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to build a website?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most websites are delivered in as little as 48 hours after the client sends their business details and photos."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is included in a Vince Web Studio website?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Every website includes design, content, a custom domain, and hosting, with no technical setup required from the client."
+      }
+    }
+  ]
+}
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
@@ -166,7 +273,7 @@
   }
   .hero p.lede + p.lede{ margin-top:14px; }
   @media (max-width:760px){
-    .hero p.lede{ text-align:left; max-width:none; }
+    .hero p.lede{ text-align:justify; max-width:none; }
   }
   .hero-ctas{
     margin-top:36px; display:flex; gap:14px; flex-wrap:wrap;
@@ -431,7 +538,7 @@
   }
   @media (max-width:760px){
     .about-card{ grid-template-columns:1fr; text-align:left; padding:32px 26px; }
-    .about-card p{ text-align:left; }
+    .about-card p{ text-align:justify; }
   }
   .about-photo{
     width:180px; height:180px; border-radius:50%; overflow:hidden;
@@ -776,7 +883,7 @@
           <li>Up to 3 pages</li>
           <li>Custom photo gallery</li>
           <li>Online Reservation</li>
-          <li>Free Custom Domain & Hosting for 1 Year</li>
+          <li>Branded domain name (included)</li>
         </ul>
         <a href="#contact" class="btn btn-primary btn-teal btn-grey-shadow" style="width:100%; justify-content:center; margin-top:24px;">Start with Standard</a>
       </div>
@@ -787,7 +894,6 @@
         <p class="price-sub">Everything in Standard, plus the extras that turn your website into a customer magnet.</p>
         <ul class="price-list">
           <li>Everything in Standard</li>
-          <li>Free Custom Domain &amp; Hosting for 3 Years</li>
           <li>Up to 5 additional pages</li>
           <li>Advanced animations &amp; interactions</li>
           <li>Priority support &amp; revisions</li>
@@ -1031,19 +1137,5 @@
   });
 </script>
 
-<!-- Vince Web Studio chat widget (MyChatBot) -->
-<link rel="stylesheet" href="https://storage.googleapis.com/mychatbot-widget-assets/v1/style.css" />
-<script src="https://storage.googleapis.com/mychatbot-widget-assets/v1/widget.js"></script>
-<div id="my-chat-widget-container"></div>
-<script>
-  MyChatBot.mount('#my-chat-widget-container', {
-    account_id: "81b88828-29f7-4617-a30a-dd6c04e13420",
-    widget_id: "webstudio-main",
-    api_url: 'https://api.mychatbot.app',
-    assistant_name: "Vince's Assistant",
-    color: "#20B2AA",
-    lang: 'en'
-  });
-</script>
 </body>
 </html>
